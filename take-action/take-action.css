@@ -1,0 +1,50 @@
+/* Take Action page only (self-contained) */
+body.ta { --dgray: #646462; --lgray: #cfcfcd; --btn: #3e7b52; background: var(--dgray); color: #fff; }
+.ta-wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.ta-intro { padding: 80px 0 80px; }
+.ta-eyebrow { color: var(--red); font: 400 1.1rem var(--body); letter-spacing: .04em; text-transform: uppercase; margin: 0 0 22px; }
+.ta-intro h1 { font-size: clamp(2rem, 5.2vw, 4.2rem); letter-spacing: .14em; line-height: 1.45; color: #fff; margin: 0 0 40px; }
+.ta-intro p { font-size: 1.25rem; line-height: 1.9; max-width: 880px; margin: 0; }
+
+.ways { background: var(--lgray); color: var(--blue); margin: 0 48px; padding: 60px 0 40px; }
+.ways-top { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: start; }
+.ways-kicker { font: 800 1rem var(--head); letter-spacing: .2em; text-transform: uppercase; color: #222; margin: 12px 0 44px; }
+.ways h2 { font: 400 clamp(2.2rem, 4vw, 3.4rem)/1.2 var(--body); color: var(--red); text-transform: none; letter-spacing: 0; margin: 0; }
+.ways-note { font-size: 1.1rem; line-height: 2.1; margin: 8px 0 0; }
+.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 24px; margin-top: 44px; text-align: center; }
+.item { padding: 0 8px 56px; }
+.item svg { width: 58px; height: 58px; fill: none; stroke: #111; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.item h3 { font-size: 1.5rem; letter-spacing: .2em; line-height: 1.7; color: var(--blue); margin: 22px 0 30px; }
+.item p { font-size: 1.05rem; line-height: 2.15; margin: 0; }
+.teal { stroke: #1a9a8f !important; }
+.teal-fill { fill: #1a9a8f !important; stroke: none !important; }
+.orange { stroke: #f08a2e !important; }
+.pray-lead { text-align: center; font: 600 1.7rem var(--body); color: #666; margin: 6px 0 26px; }
+.pray-title { display: flex; justify-content: center; align-items: center; gap: 18px; }
+.pray-title svg { width: 48px; height: 48px; fill: none; stroke: #8b1a1a; stroke-width: 1.5; stroke-linejoin: round; }
+.pray-title h3 { font-size: 1.7rem; letter-spacing: .2em; color: var(--blue); margin: 0; }
+.pray-text { text-align: center; max-width: 900px; margin: 26px auto 30px; font-size: 1.05rem; line-height: 2; }
+
+.heart { padding: 90px 0; }
+.heart .ta-eyebrow { font-size: 1.2rem; text-transform: none; }
+.heart h2 { color: #fff; font-size: clamp(2rem, 4.5vw, 3.4rem); letter-spacing: .2em; margin: 0 0 30px; }
+.heart p { font-size: 1.15rem; line-height: 1.9; margin: 0; max-width: 880px; }
+.verse { border-left: 4px solid var(--red); margin: 40px 0 0; padding: 6px 0 6px 40px; font: italic 400 clamp(1.15rem, 1.9vw, 1.55rem)/2 'EB Garamond', Georgia, serif; max-width: 960px; }
+.verse cite { display: block; margin-top: 28px; font-style: normal; }
+
+.go { background: var(--lgray); color: var(--blue); margin: 0 48px 80px; padding: 70px 0 80px; }
+.go p { font-size: clamp(1.15rem, 1.7vw, 1.4rem); line-height: 1.9; margin: 0 0 30px; max-width: 1050px; }
+.btn-green { display: inline-block; background: var(--btn); color: #fff; font: 400 1.1rem var(--body); letter-spacing: .2em; text-transform: uppercase; text-decoration: none; padding: 18px 44px; border-radius: 40px; }
+.btn-green:hover { background: #2f6340; }
+
+@media (max-width: 1100px) {
+  .ta-intro { padding: 50px 0; }
+  .ways { margin: 0; padding: 50px 20px 20px; }
+  .ways-top { grid-template-columns: 1fr; gap: 10px; }
+  .ways-kicker { margin-bottom: 24px; }
+  .cols { grid-template-columns: 1fr; margin-top: 30px; }
+  .heart { padding: 60px 0; }
+  .verse { padding-left: 20px; }
+  .go { margin: 0 0 50px; padding: 50px 20px 60px; text-align: center; }
+  .pray-title { flex-direction: column; gap: 10px; }
+}
