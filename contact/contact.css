@@ -1,0 +1,37 @@
+/* Contact page only (self-contained) */
+body.ct { background: var(--gray); color: var(--blue); }
+.ct main { padding-top: 100px; }
+.c-panel { background: #fff; margin: 0 5%; padding: 80px 24px 110px; }
+.c-wrap { max-width: 1078px; margin: 0 auto; }
+.c-panel h1 { font-size: clamp(2rem, 5vw, 3.6rem); letter-spacing: .2em; color: var(--red); text-align: center; line-height: 1.4; margin: 0 0 70px; }
+.c-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 110px; align-items: start; }
+.c-intro { font-size: 1.05rem; line-height: 2.3; letter-spacing: .02em; margin: 0 0 40px; }
+.c-row { display: flex; align-items: center; gap: 26px; margin: 0 0 44px; font-size: 1.3rem; }
+.c-row svg { flex: none; width: 36px; }
+.c-row a { text-decoration: none; }
+.c-row a:hover { text-decoration: underline; }
+.c-form .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.c-form label { display: block; font-size: 1rem; color: #666; margin: 0 0 2px; }
+.c-form .f { margin: 0 0 14px; }
+.c-form input, .c-form textarea { width: 100%; border: 0; border-bottom: 1px solid #999; background: transparent; font: 300 1.1rem var(--body); color: var(--blue); padding: 12px 0 8px; border-radius: 0; }
+.c-form textarea { height: 140px; resize: vertical; }
+.c-form input:focus, .c-form textarea:focus { outline: 0; border-bottom: 2px solid var(--red); }
+.c-send { display: block; margin: 20px auto 0; background: none; border: 0; color: var(--red); font: 600 1.05rem var(--body); cursor: pointer; padding: 10px 24px; }
+.c-send:hover { text-decoration: underline; }
+.c-send:disabled { opacity: .6; cursor: default; }
+.c-status { text-align: center; font-size: 1rem; min-height: 1.5em; margin: 10px 0 0; }
+.c-note { text-align: center; font-size: .85rem; color: #666; margin: 6px 0 0; }
+.c-rule { border: 0; border-top: 2px solid #555; margin: 80px 0 60px; }
+.c-panel h2 { font-size: 1.3rem; letter-spacing: .28em; text-align: center; margin: 0 0 50px; }
+.team { list-style: none; margin: 0; padding: 0; text-align: center; }
+.team li { font: 600 clamp(1.1rem, 1.7vw, 1.5rem) var(--body); color: #666; line-height: 1.7; margin: 0 0 22px; }
+@media (max-width: 1100px) {
+  .ct main { padding-top: 0; }
+  .c-panel { margin: 0; padding: 40px 20px 70px; }
+  .c-panel h1 { margin-bottom: 36px; }
+  .c-grid { grid-template-columns: 1fr; gap: 20px; }
+  .c-intro { text-align: center; }
+  .c-form .pair { grid-template-columns: 1fr; gap: 0; }
+  .c-row { font-size: 1.15rem; gap: 18px; }
+  .c-rule { margin: 50px 0 40px; }
+}
