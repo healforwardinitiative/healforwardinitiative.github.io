@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="only light">
+  <title>Contact | Heal Forward Initiative</title>
+  <meta name="description" content="Get in touch with HFI. We'd love to connect with donors, churches, and anyone who wants to make a difference in Calgary.">
+  <link rel="icon" href="/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Mulish:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Jost:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/contact/contact.css">
+</head>
+<body class="ct">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">Heal Forward Initiative</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/who-we-are/">Who We Are</a>
+      <a href="/take-action/">Take Action</a>
+      <a href="/support-us/">Support Us</a>
+      <a href="/contact/" class="current" aria-current="page">Contact</a>
+    </nav>
+    <a class="logo-link" href="/" aria-label="Heal Forward Initiative home"><img src="/logo.png" alt="Heal Forward Initiative logo" width="110" height="110"></a>
+  </div>
+  <a class="donate" href="/support-us/">Donate</a>
+</header>
+
+<aside class="social-bar" aria-label="Social media">
+  <a href="https://www.tiktok.com/@healforwardinitiative" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+  <a href="https://www.facebook.com/profile.php?id=61590595524438" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.7.2-1.1 1.2-1.1H17V2h-2.8C11.2 2 10 3.7 10 6.2V8H7.5v3.5H10V22h4V11.5h2.7L17 8h-3z"/></svg></a>
+  <a href="https://www.instagram.com/healforwardinitiative/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+</aside>
+
+<main>
+  <section class="c-panel">
+    <div class="c-wrap">
+      <h1>Get in touch with us</h1>
+
+      <div class="c-grid">
+        <div>
+          <p class="c-intro">At Heal Forward Initiative, we&rsquo;re dedicated to making a difference in the lives of people experiencing homelessness in Calgary. Reach out to us to learn more about our mission and anything else related to our initiative.</p>
+          <p class="c-row">
+            <svg viewBox="0 0 40 28" aria-hidden="true"><rect width="40" height="28" fill="#254151"/><path d="M2 3l18 12L38 3" fill="none" stroke="#fff" stroke-width="2"/></svg>
+            <a href="mailto:info@healforwardinitiative.org">info@healforwardinitiative.org</a>
+          </p>
+          <p class="c-row">
+            <svg viewBox="0 0 24 34" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 22 12 22s12-13 12-22C24 5.4 18.6 0 12 0z" fill="#254151"/><circle cx="12" cy="12" r="5" fill="#fff"/></svg>
+            <span>Downtown Calgary, AB.</span>
+          </p>
+        </div>
+
+        <form class="c-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="bcdc4eac-b3b6-4b79-a6b6-0e1a61b65789">
+          <input type="hidden" name="from_name" value="Heal Forward Initiative website">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="pair">
+            <div class="f"><label for="fn">First name *</label><input id="fn" name="first_name" type="text" required autocomplete="given-name"></div>
+            <div class="f"><label for="ln">Last name *</label><input id="ln" name="last_name" type="text" required autocomplete="family-name"></div>
+          </div>
+          <div class="f"><label for="em">Email *</label><input id="em" name="email" type="email" required autocomplete="email"></div>
+          <div class="f"><label for="sj">Subject</label><input id="sj" name="subject" type="text"></div>
+          <div class="f"><label for="ms">Message</label><textarea id="ms" name="message"></textarea></div>
+          <button class="c-send" id="send" type="submit">Submit</button>
+          <p class="c-status" id="form-status" role="status"></p>
+          <p class="c-note">Your message is delivered to our team through Web3Forms.</p>
+        </form>
+      </div>
+
+      <hr class="c-rule">
+
+      <h2>Our Team</h2>
+      <ul class="team">
+        <li>Joel de Jonge -- Initiative Lead &amp; Website Developer</li>
+        <li>Jessica Wu -- Social Media Coordinator</li>
+        <li>Michelle Kuteyi -- Team Member</li>
+        <li>Anson Lee -- Team Member</li>
+        <li>Janice Ho -- Team Member</li>
+        <li>Trina Liu -- Team Member</li>
+        <li>Calla Kanak -- Team Member</li>
+        <li>Mariana Niemiec -- Team Member</li>
+        <li>Mikayla Torhjelm -- Team Member</li>
+        <li>Victoria Suen -- Faculty Advisor</li>
+        <li>Chris Greenwood -- Faculty Advisor</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h3>Contact Us</h3>
+      <ul><li><a href="mailto:info@healforwardinitiative.org">info@healforwardinitiative.org</a></li></ul>
+    </div>
+    <div>
+      <h3>Connect With Us</h3>
+      <ul>
+        <li><a href="https://www.tiktok.com/@healforwardinitiative">TikTok</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61590595524438">Facebook</a></li>
+        <li><a href="https://www.instagram.com/healforwardinitiative/">Instagram</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/donation-disclaimer/">Donation Disclaimer</a></li>
+        <li><a href="/cookie-notice/">Cookie Notice</a></li>
+        <li><a href="/photo-and-media-consent-policy/">Photo and Media Consent Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-strip"></div>
+</footer>
+
+<script>
+  var btn = document.getElementById('menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+
+  var form = document.getElementById('contact-form'),
+      status = document.getElementById('form-status'),
+      send = document.getElementById('send');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fd = new FormData(form);
+    fd.set('name', (fd.get('first_name') + ' ' + fd.get('last_name')).trim());
+    if (!fd.get('subject')) fd.set('subject', 'New message from the HFI website');
+    send.disabled = true; send.textContent = 'Sending...'; status.textContent = '';
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d.success) { status.textContent = 'Thank you! Your message has been sent.'; form.reset(); }
+        else { status.textContent = 'Something went wrong. Please email us at info@healforwardinitiative.org.'; }
+      })
+      .catch(function () { status.textContent = 'Something went wrong. Please email us at info@healforwardinitiative.org.'; })
+      .then(function () { send.disabled = false; send.textContent = 'Submit'; });
+  });
+</script>
+</body>
+</html>
