@@ -11,7 +11,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Mulish:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Jost:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/support-us/support-us.css">
+  <style>
+/* Support Us page only (self-contained) */
+body.su { background: var(--gray); color: var(--blue); }
+.su-panel { background: #fff; margin: 0 5%; }
+.su-wrap { max-width: 1078px; margin: 0 auto; padding: 0 24px; }
+.su-top { padding-top: 70px; }
+.su-panel h1 { font-size: clamp(2rem, 4.8vw, 3.6rem); letter-spacing: .12em; line-height: 1.05; color: var(--red); text-align: center; margin: 0 0 60px; }
+.su-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 77px; margin: 0 0 70px; }
+.su-pair > div { border-top: 4px solid var(--yellow); padding-top: 28px; }
+.su-pair h3 { font: 600 1.9rem/1.3 var(--body); text-transform: none; letter-spacing: 0; margin: 0 0 26px; }
+.su-pair p { font-size: 1.02rem; line-height: 2.2; margin: 0; }
+.su-pair a { color: var(--blue); }
+.su-volunteer { text-align: center; font-size: 1.2rem; line-height: 1.7; max-width: 800px; margin: 0 auto 70px; }
+.su-ways { text-align: center; font-size: clamp(1.8rem, 3.4vw, 2.6rem); letter-spacing: .2em; margin: 0 0 30px; }
+.su-rule { width: min(420px, 80%); height: 4px; background: var(--yellow); border: 0; margin: 0 auto 70px; }
+.su-cols { display: grid; grid-template-columns: repeat(3, 1fr); }
+.su-col { color: #fff; text-align: center; padding: 56px 44px 70px; min-height: 450px; }
+.su-col svg { width: 46px; height: 46px; }
+.su-col h3 { font: 600 1.7rem var(--body); text-transform: none; letter-spacing: 0; margin: 14px 0 22px; }
+.su-col p { font-size: 1rem; line-height: 2; margin: 0 0 1em; }
+.su-col a { color: #fff; }
+.c-red { background: var(--red); } .c-gray { background: #646462; } .c-teal { background: var(--green); }
+.su-band { padding: 50px 24px 60px; text-align: center; }
+.su-help { display: inline-block; background: var(--blue); color: #fff; font: 400 1.05rem/1.6 var(--body); letter-spacing: .15em; padding: 20px 40px; text-decoration: none; }
+.su-help:hover { background: #1b3140; }
+.su-give { padding: 70px 0 80px; }
+.su-give h2 { font-size: clamp(2rem, 4.6vw, 3.4rem); letter-spacing: .2em; color: var(--red); text-align: center; margin: 0 0 24px; }
+.su-sub { text-align: center; font-size: 1.05rem; margin: 0 0 20px; }
+.su-line { border: 0; border-top: 2px solid #222; width: min(1009px, 100%); margin: 0 auto 26px; }
+.su-note { text-align: center; font-size: 1.05rem; line-height: 2; margin: 0 0 28px; }
+.su-confirm { font-size: .9rem; line-height: 1.5; margin: 0 0 18px; }
+.su-zeffy { max-width: 1118px; margin: 0 auto 70px; padding: 0 24px; }
+.su-faq h2 { font-size: 1.4rem; letter-spacing: .25em; margin: 0 0 20px; }
+.su-faq .u { width: min(340px, 70%); border: 0; border-top: 3px solid #666; margin: 0 auto 40px; }
+.su-faq p { font-size: 1.05rem; line-height: 2.1; margin: 0 0 1.8em; }
+.su-faq b { font-weight: 700; }
+@media (max-width: 1100px) {
+  .su-panel { margin: 0; }
+  .su-top { padding-top: 40px; }
+  .su-pair { grid-template-columns: 1fr; gap: 40px; margin-bottom: 50px; }
+  .su-pair > div { text-align: center; }
+  .su-cols { grid-template-columns: 1fr; }
+  .su-col { min-height: 0; padding: 50px 24px 56px; }
+  .su-give { padding: 50px 0 60px; }
+  .su-help { display: block; font-size: .95rem; padding: 18px 20px; }
+  .su-faq h2 { text-align: center; }
+}
+  </style>
 </head>
 <body class="su">
 
@@ -61,17 +108,17 @@
 
     <div class="su-cols">
       <div class="su-col c-red">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4" fill="#739b86"/><path d="M3 22c0-5 4-8 9-8s9 3 9 8z" fill="#739b86"/></svg>
+        <svg width="46" height="46" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4" fill="#739b86"/><path d="M3 22c0-5 4-8 9-8s9 3 9 8z" fill="#739b86"/></svg>
         <h3>Spread the Word</h3>
         <p>Sometimes the most powerful thing you can do is tell someone. Share our website, follow us on social media, and let your community know that HFI exists. Awareness builds trust, trust builds support, and support keeps people warm. If you believe in what we&rsquo;re doing, help us reach the people who will too.</p>
       </div>
       <div class="su-col c-gray">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2" fill="none" stroke="#fff" stroke-width="2"/><rect x="10" y="6" width="4" height="7" rx="1" fill="#fff"/><circle cx="12" cy="17" r="1" fill="#fff"/></svg>
+        <svg width="46" height="46" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2" fill="none" stroke="#fff" stroke-width="2"/><rect x="10" y="6" width="4" height="7" rx="1" fill="#fff"/><circle cx="12" cy="17" r="1" fill="#fff"/></svg>
         <h3>Online Donations</h3>
         <p>The quickest and easiest way for you to directly make an impact is through the form below!</p>
       </div>
       <div class="su-col c-teal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" fill="#c9604e"/><path d="M2 6l10 7 10-7" fill="none" stroke="#45b29d" stroke-width="1.6"/></svg>
+        <svg width="46" height="46" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" fill="#c9604e"/><path d="M2 6l10 7 10-7" fill="none" stroke="#45b29d" stroke-width="1.6"/></svg>
         <h3>Email Us</h3>
         <p>Have questions about anything related to us. We&rsquo;d love to hear from you.</p>
         <p><a href="mailto:info@healforwardinitiative.org">info@healforwardinitiative.org</a></p>
