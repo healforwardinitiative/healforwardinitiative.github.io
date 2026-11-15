@@ -4,16 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="only light">
-  <title>Contact | Heal Forward Initiative</title>
-  <meta name="description" content="Get in touch with HFI. We'd love to connect with donors, churches, and anyone who wants to make a difference in Calgary.">
+  <meta name="robots" content="noindex">
+  <title>Terms &amp; Conditions | Heal Forward Initiative</title>
+  <meta name="description" content="Terms and Conditions for using the Heal Forward Initiative website.">
   <link rel="icon" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Mulish:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Jost:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Mulish:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/contact/contact.css">
+  <style>
+body.pol{background:var(--gray);color:var(--blue)}
+.pol main{padding:70px 0 0}
+.pol-panel{background:#fff;margin:0 5%;padding:70px 24px 90px}
+.pol-wrap{max-width:820px;margin:0 auto}
+.pol h1{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:.14em;color:var(--red);line-height:1.3;margin:0 0 14px}
+.pol .eff{font-size:.95rem;color:#666;margin:0 0 40px}
+.pol h2{font:700 1.25rem/1.4 var(--head);text-transform:none;letter-spacing:0;color:var(--blue);margin:40px 0 12px}
+.pol p,.pol li{font-size:1.05rem;line-height:1.9;margin:0 0 1em;font-weight:400}
+.pol ul{margin:0 0 1.2em;padding-left:1.4em}
+.pol li{margin-bottom:.5em}
+.pol a{color:var(--blue)}
+@media(max-width:1100px){.pol main{padding-top:0}.pol-panel{margin:0;padding:40px 20px 60px}}
+  </style>
 </head>
-<body class="ct">
+<body class="pol">
 
 <header class="site-header">
   <div class="header-inner">
@@ -24,7 +38,7 @@
       <a href="/who-we-are/">Who We Are</a>
       <a href="/take-action/">Take Action</a>
       <a href="/support-us/">Support Us</a>
-      <a href="/contact/" class="current" aria-current="page">Contact</a>
+      <a href="/contact/">Contact</a>
     </nav>
     <a class="logo-link" href="/" aria-label="Heal Forward Initiative home"><img src="/logo.png" alt="Heal Forward Initiative logo" width="110" height="110"></a>
   </div>
@@ -38,56 +52,46 @@
 </aside>
 
 <main>
-  <section class="c-panel">
-    <div class="c-wrap">
-      <h1>Get in touch with us</h1>
-
-      <div class="c-grid">
-        <div>
-          <p class="c-intro">At Heal Forward Initiative, we&rsquo;re dedicated to making a difference in the lives of people experiencing homelessness in Calgary. Reach out to us to learn more about our mission and anything else related to our initiative.</p>
-          <p class="c-row">
-            <svg viewBox="0 0 40 28" aria-hidden="true"><rect width="40" height="28" fill="#254151"/><path d="M2 3l18 12L38 3" fill="none" stroke="#fff" stroke-width="2"/></svg>
-            <a href="mailto:info@healforwardinitiative.org">info@healforwardinitiative.org</a>
-          </p>
-          <p class="c-row">
-            <svg viewBox="0 0 24 34" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 22 12 22s12-13 12-22C24 5.4 18.6 0 12 0z" fill="#254151"/><circle cx="12" cy="12" r="5" fill="#fff"/></svg>
-            <span>Downtown Calgary, AB.</span>
-          </p>
-        </div>
-
-        <form class="c-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="bcdc4eac-b3b6-4b79-a6b6-0e1a61b65789">
-          <input type="hidden" name="from_name" value="Heal Forward Initiative website">
-          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-          <div class="pair">
-            <div class="f"><label for="fn">First name *</label><input id="fn" name="first_name" type="text" required autocomplete="given-name"></div>
-            <div class="f"><label for="ln">Last name *</label><input id="ln" name="last_name" type="text" required autocomplete="family-name"></div>
-          </div>
-          <div class="f"><label for="em">Email *</label><input id="em" name="email" type="email" required autocomplete="email"></div>
-          <div class="f"><label for="sj">Subject</label><input id="sj" name="subject" type="text"></div>
-          <div class="f"><label for="ms">Message</label><textarea id="ms" name="message"></textarea></div>
-          <button class="c-send" id="send" type="submit">Submit</button>
-          <p class="c-status" id="form-status" role="status"></p>
-          <p class="c-note">Your message is delivered to our team through Web3Forms.</p>
-        </form>
-      </div>
-
-      <hr class="c-rule">
-
-      <h2>Our Team</h2>
-      <ul class="team">
-        <li>Joel de Jonge -- Initiative Lead &amp; Website Developer</li>
-        <li>Jessica Wu -- Social Media Coordinator</li>
-        <li>Michelle Kuteyi -- Team Member</li>
-        <li>Anson Lee -- Team Member</li>
-        <li>Janice Ho -- Team Member</li>
-        <li>Trina Liu -- Team Member</li>
-        <li>Calla Kanak -- Team Member</li>
-        <li>Mariana Niemiec -- Team Member</li>
-        <li>Mikayla Torhjelm -- Team Member</li>
-        <li>Victoria Suen -- Faculty Advisor</li>
-        <li>Chris Greenwood -- Faculty Advisor</li>
+  <section class="pol-panel">
+    <div class="pol-wrap">
+      <h1>Terms &amp; Conditions</h1>
+      <p class="eff">Effective Date: April 15, 2026. Last updated: November 2026.</p>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using the Heal Forward Initiative website (the “Site”), you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the Site.</p>
+      <h2>2. About Us</h2>
+      <p>Heal Forward Initiative is a community-based initiative operating in downtown Calgary, Alberta. We are not a registered charity, registered nonprofit, or incorporated entity. We are a youth-led group operating on a grassroots basis to support people experiencing homelessness.</p>
+      <h2>3. Use of This Website</h2>
+      <p>You agree to use this Site only for lawful purposes and in a manner that does not infringe the rights of others. You must not:</p>
+      <ul>
+        <li>Use the Site in any way that is unlawful, harmful, or fraudulent.</li>
+        <li>Attempt to gain unauthorized access to any part of the Site.</li>
+        <li>Use the Site to impersonate Heal Forward Initiative or misrepresent your affiliation with us.</li>
+        <li>Submit false or misleading information through any form on the Site.</li>
       </ul>
+      <h2>4. Donations</h2>
+      <p>Donations made through this Site are processed by Zeffy, a third-party donation platform, using its payment processor, Stripe. By making a donation, you acknowledge that:</p>
+      <ul>
+        <li>Heal Forward Initiative is not a registered charity with the Canada Revenue Agency (CRA).</li>
+        <li>Donations are not tax-deductible, and no official tax receipts will be issued.</li>
+        <li>All donations are voluntary and non-refundable, except where required by law.</li>
+        <li>Funds will be used to support the programs and activities described on this Site.</li>
+      </ul>
+      <h2>5. No Professional Advice</h2>
+      <p>The content on this Site is for general informational purposes only. Nothing on this Site constitutes legal, financial, medical, or professional advice. Do not rely on content from this Site as a substitute for professional guidance.</p>
+      <h2>6. No Guarantees of Service</h2>
+      <p>Heal Forward Initiative operates on a volunteer basis. We make no guarantees regarding the availability of our programs, the quantity of supplies distributed, or the continuity of our operations. We reserve the right to modify or discontinue any program at any time without notice.</p>
+      <h2>7. Third-Party Links</h2>
+      <p>Our Site may contain links to third-party websites. We are not responsible for the content, privacy practices, or accuracy of any third-party site. Visiting third-party links is at your own risk.</p>
+      <h2>8. Intellectual Property</h2>
+      <p>All content on this Site, including text, images, logos, and graphics, is the property of Heal Forward Initiative or its contributors. You may not reproduce or distribute any content from this Site without our written permission.</p>
+      <h2>9. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by applicable law, Heal Forward Initiative and its team members, volunteers, and advisors shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of this Site or our programs.</p>
+      <h2>10. Governing Law</h2>
+      <p>These Terms and Conditions are governed by the laws of the Province of Alberta and the federal laws of Canada applicable therein.</p>
+      <h2>11. Changes to These Terms</h2>
+      <p>We reserve the right to update these Terms at any time. Changes will be posted on this page. Continued use of the Site after changes are posted constitutes your acceptance of the updated Terms.</p>
+      <h2>12. Contact</h2>
+      <p>Questions about these Terms? Contact us at <a href="mailto:info@healforwardinitiative.org">info@healforwardinitiative.org</a>.</p>
     </div>
   </section>
 </main>
@@ -125,25 +129,6 @@
   btn.addEventListener('click', function () {
     var open = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', open);
-  });
-
-  var form = document.getElementById('contact-form'),
-      status = document.getElementById('form-status'),
-      send = document.getElementById('send');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var fd = new FormData(form);
-    fd.set('name', (fd.get('first_name') + ' ' + fd.get('last_name')).trim());
-    if (!fd.get('subject')) fd.set('subject', 'New message from the HFI website');
-    send.disabled = true; send.textContent = 'Sending...'; status.textContent = '';
-    fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
-      .then(function (r) { return r.json(); })
-      .then(function (d) {
-        if (d.success) { status.textContent = 'Thank you! Your message has been sent.'; form.reset(); }
-        else { status.textContent = 'Something went wrong. Please email us at info@healforwardinitiative.org.'; }
-      })
-      .catch(function () { status.textContent = 'Something went wrong. Please email us at info@healforwardinitiative.org.'; })
-      .then(function () { send.disabled = false; send.textContent = 'Submit'; });
   });
 </script>
 </body>
